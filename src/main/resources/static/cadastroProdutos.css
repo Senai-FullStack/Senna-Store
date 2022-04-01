@@ -1,0 +1,391 @@
+/*Importa��es de Fonte*/
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+/* Corpo do meu site */
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #FFFAFA;
+}
+
+/*Formata��o do HEADER*/
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #111;
+	box-shadow: 0px 5px 20px #000;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.navbar {
+	width: 100%;
+}
+
+/*Nome*/
+
+
+section {
+	display: flex;
+	width: 100%;
+}
+
+
+/*Estilo  da UL */
+.menuSite li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+}
+
+.menuSite li a:hover {
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	background-color: #333;
+}
+
+.navbar ul li a .iconNav ion-icon {
+	position: relative;
+	font-size: 1.5rem;
+	z-index: 1;
+}
+
+.menuSite {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Estilo da logo*/
+.logoSite {
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+/*CSS GRID*/
+.container{
+	margin: 100px;
+}
+
+.container b{
+	color: black;
+	
+}
+
+
+.btn-secondary{
+ margin-top:30px;
+ margin-left: 20px;
+	border-radius: 15px; 
+	background-color: #1C1C1C;
+	border-color: #1C1C1C; 
+
+ }
+
+.btn-success{
+	margin-top:30px;
+	border-radius: 15px; 
+	background-color: #1C1C1C;
+	border-color: #1C1C1C; 
+}
+
+
+h1 {
+	color: black;
+	text-align: center;
+}
+h3 {
+	color: black;
+	text-align: center;
+}
+
+
+/*Estilizando a imagem*/
+.form-control {
+	
+	background:#f3eded;
+	outline-color: white;
+}
+
+.form-controlform input:focus, form placeholder:focus {
+	outline-color: white;
+}
+
+.form-control:focus {
+	background: white;
+	outline-color: white;
+	color: black;
+}
+
+.form-control placeholder {
+	color: white;
+}
+
+
+
+
+.item {
+	width: 100%;
+	grid-area: "item";
+	margin-right: 1%;
+	border: 1px #ccc;;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.item img {
+	width: 200px;
+}
+
+.item p {
+	text-align: center;
+	color: black;
+}
+
+.item a {
+	text-decoration: none;
+	color: white;
+	background-color: #1C1C1C;
+	text-align: center;
+	display: block;
+	padding: 7px 0;
+	font-size: 18px;
+	transition: 0.7s;
+	border-radius: 5px;	
+}
+
+.item a:hover{
+	background: #A9A9A9;
+	
+}
+
+
+footer {
+	bottom: 0px;
+	width: 100%;
+	background: #111;
+}
+
+.main-content {
+	display: flex;
+}
+
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 20px
+}
+
+.box h2 {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content {
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+.box .content:after {
+	position: absolute;
+	content: '';
+	width: 15%;
+	height: 2px;
+	background: #808080;
+	top: -10px;
+}
+
+.box .content:before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #1a1a1a;
+	top: -10px
+}
+
+.left .content .social {
+	margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+	padding: 0 2px;
+}
+
+.left .content .social a span {
+	width: 40px;
+	height: 40px;
+	background: #1a1a1a;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.left .content .social a span:hover {
+	background: #808080;
+}
+
+.left .content p {
+	text-align: justify;
+}
+
+.center .content .fas {
+	font-size: 23px;
+	background: #1a1a1a;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.center .content .fas:hover {
+	background: #808080;
+}
+
+.center .content .text {
+	font-size: 17px;
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+.center .content .phone {
+	margin: 10px 0;
+}
+
+.center .content .msg {
+	margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+	width: 100%;
+	font-size: 17px;
+	background: #151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+
+.right form input {
+	height: 35px;
+}
+
+.right form .text {
+	font-size: 17px;
+	margin-bottom: 2px;
+	color: #656565;
+}
+
+.right form .btn {
+	margin-top: 10px
+}
+
+.right form .btn button {
+	height: 40px;
+	width: 100px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.5
+}
+
+.right form .btn button:hover {
+	background: #696969;
+}
+
+.bottom .center {
+	padding: 5px;
+	font-size: 15px;
+	background: #151515;
+	text-align: center;
+}
+
+.bottom .center span {
+	color: #656565;
+}
+
+.bottom .center a {
+	color: #808080;
+	text-decoration: none;
+}
+
+.bottom .center a:hover {
+	text-decoration: underline;
+}
+.dropdown-menu{
+	background: black;
+
+	
+}
+.dropdown-menu :hover{
+	background-color: black;
+    transition: 1s;
+	
+}
+
+.dropdown-item{
+	color:white;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*Cuidando da responsividade do site*/
+@media screen and ( max-width : 912px) {
+	footer {
+		position: relative;
+		bottom: 0px;
+	}
+	.main-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box {
+		margin: 5px 0;
+	}
+}
+
+@media ( max-width : 912px) {
+	.container {
+		grid-template-areas: "sidenav item" "sidenav item" "sidenav item"
+			"sidenav item" "sidenav item" "sidenav item";
+	}
+}
+
+@media ( max-width : 520px) {
+	.sidenav {
+		height: 200px;
+	}
+	.container {
+		grid-template-areas: "sidenav" " item" " item" " item" " item" " item";
+	}
+}
+	
+
+@media (max-width :642px){
+	form{
+	 width: 100%;
+	
+	}
+}

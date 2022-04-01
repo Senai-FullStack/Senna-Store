@@ -1,0 +1,473 @@
+/*Importa��es de Fonte*/
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+/* Corpo do meu site */
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #FFFAFA;
+}
+
+/*Formata��o do HEADER*/
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #111;
+	box-shadow: 0px 5px 20px #000;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.navbar {
+	width: 100%;
+}
+
+/*Nome*/
+.bannerSite {
+	align-items: center;
+	color: white;
+	border: 0px solid white;
+	padding: 10px; margin : 40px;
+	width: 94%;
+	text-align: center;
+	height: 120px;
+	cursor: pointer;
+	margin: 40px;
+}
+
+section {
+	display: flex;
+	width: 100%;
+}
+
+.bannerSite img {
+	width: 100%;
+	padding: 3px;
+	height: 120px;
+	margin-top: -10px;
+	
+}
+/*Estilo  da UL */
+.menuSite li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+}
+
+.menuSite li a:hover {
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	background-color: #333;
+}
+
+.navbar ul li a .iconNav ion-icon {
+	position: relative;
+	font-size: 1.5rem;
+	z-index: 1;
+}
+
+.menuSite {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Estilo da logo*/
+.logoSite {
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+/*CSS GRID*/
+.container {
+	max-width: 1200px;
+	border: 0px solid #fff;
+	padding: 0px 20px 0px 20px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: "sidenav item item item item" "sidenav item item item item"
+		"sidenav item item item item";
+	grid-gap: 40px;
+	justify-content: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+/*Estilizando a imagem*/
+.form-control {
+	background-color: #151515;
+	background: #151515;
+	outline-color: white;
+}
+
+.form-controlform input:focus, form placeholder:focus {
+	outline-color: white;
+}
+
+.form-control:focus {
+	background: #151515;
+	outline-color: white;
+	color: white;
+}
+
+.form-control placeholder {
+	color: white;
+}
+
+.sidenav {
+	position: relative;
+	width: 300px;
+	height: 700px;
+	background-color: #111;
+	grid-area: "sidenav";
+	grid-row: sidenav;
+	box-shadow: 7px 0 0 black;
+	border-left: 10px solid #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	border-radius: 20px;
+	
+}
+
+.sidenav:hover {
+	width: 350px;
+}
+
+.sidenav ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 40px;
+
+}
+
+.sidenav ul li {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.sidenav ul li a {
+	position: relative;
+	display: flex;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+.sidenav ul li a .icon {
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.sidenav ul li a .icon ion-icon {
+	position: relative;
+	font-size: 1.5rem;
+	z-index: 1;
+}
+
+.sidenav ul li a .title {
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+	white-space: nowrap;
+}
+
+.sidenav ul li.active {
+	background-color: black
+}
+
+.sidenav ul li.active a::before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	background: #111;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 black;
+}
+
+.sidenav ul li.active a::after {
+	content: '';
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	background: #111;
+	border-radius: 50%;
+	box-shadow: 15px -15px 0 black;
+}
+
+.item {
+	width: 100%;
+	grid-area: "item";
+	margin-right: 1%;
+	border: 1px #ccc;;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.item img {
+	width: 200px;
+}
+
+.item p {
+	text-align: center;
+	color: black;
+}
+
+.item a {
+	text-decoration: none;
+	color: white;
+	background-color: #1C1C1C;
+	text-align: center;
+	display: block;
+	padding: 7px 0;
+	font-size: 18px;
+	transition: 0.7s;
+	border-radius: 5px;	
+}
+
+.item a:hover{
+	background: #A9A9A9;
+	
+}
+
+
+footer {
+	bottom: 0px;
+	width: 100%;
+	background: #111;
+}
+
+.main-content {
+	display: flex;
+}
+
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 20px
+}
+
+.box h2 {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content {
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+.box .content:after {
+	position: absolute;
+	content: '';
+	width: 15%;
+	height: 2px;
+	background: #808080;
+	top: -10px;
+}
+
+.box .content:before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #1a1a1a;
+	top: -10px
+}
+
+.left .content .social {
+	margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+	padding: 0 2px;
+}
+
+.left .content .social a span {
+	width: 40px;
+	height: 40px;
+	background: #1a1a1a;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.left .content .social a span:hover {
+	background: #808080;
+}
+
+.left .content p {
+	text-align: justify;
+}
+
+.center .content .fas {
+	font-size: 23px;
+	background: #1a1a1a;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.center .content .fas:hover {
+	background: #808080;
+}
+
+.center .content .text {
+	font-size: 17px;
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+.center .content .phone {
+	margin: 10px 0;
+}
+
+.center .content .msg {
+	margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+	width: 100%;
+	font-size: 17px;
+	background: #151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+
+.right form input {
+	height: 35px;
+}
+
+.right form .text {
+	font-size: 17px;
+	margin-bottom: 2px;
+	color: #656565;
+}
+
+.right form .btn {
+	margin-top: 10px
+}
+
+.right form .btn button {
+	height: 40px;
+	width: 100px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.5
+}
+
+.right form .btn button:hover {
+	background: #696969;
+}
+
+.bottom .center {
+	padding: 5px;
+	font-size: 15px;
+	background: #151515;
+	text-align: center;
+}
+
+.bottom .center span {
+	color: #656565;
+}
+
+.bottom .center a {
+	color: #808080;
+	text-decoration: none;
+}
+
+.bottom .center a:hover {
+	text-decoration: underline;
+}
+.dropdown-menu{
+	background: black;
+
+	
+}
+.dropdown-menu :hover{
+	background-color: black;
+    transition: 1s;
+	
+}
+
+.dropdown-item{
+	color:white;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*Cuidando da responsividade do site*/
+@media screen and ( max-width : 912px) {
+	footer {
+		position: relative;
+		bottom: 0px;
+	}
+	.main-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box {
+		margin: 5px 0;
+	}
+}
+
+@media ( max-width : 912px) {
+	.container {
+		grid-template-areas: "sidenav item" "sidenav item" "sidenav item"
+			"sidenav item" "sidenav item" "sidenav item";
+	}
+}
+
+@media ( max-width : 520px) {
+	.sidenav {
+		height: 200px;
+	}
+	.container {
+		grid-template-areas: "sidenav" " item" " item" " item" " item" " item";
+	}
+}
